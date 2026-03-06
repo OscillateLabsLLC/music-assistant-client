@@ -41,6 +41,42 @@ client.queue_command_next(players[0].player_id)
 client.player_command_volume_set(players[0].player_id, 50)
 ```
 
+## Claude Code Skill
+
+Control Music Assistant with natural language from [Claude Code](https://docs.anthropic.com/en/docs/claude-code). See [CLAUDE.md](CLAUDE.md) for full setup.
+
+```bash
+pip install ma-http-client
+ma-install-skill
+```
+
+Then in any Claude Code session:
+
+```
+/music-assistant play some Radiohead
+```
+
+Or just ask naturally — Claude auto-invokes the skill when it matches.
+
+### Standalone Agent
+
+For use outside Claude Code (scripts, OVOS, etc.), install the `claude` extra:
+
+```bash
+pip install "ma-http-client[claude]"
+```
+
+```python
+from ma_http_client.claude_tools import MusicAssistantAgent
+
+agent = MusicAssistantAgent(
+    ma_url="http://homeassistant.local:8095",
+    ma_token="YOUR_MA_TOKEN",
+    default_player="Living Room",
+)
+print(agent.run("Play some Radiohead"))
+```
+
 ## Debug Client
 
 The `DebugMusicAssistantClient` extends the base client with fixture capture for troubleshooting:

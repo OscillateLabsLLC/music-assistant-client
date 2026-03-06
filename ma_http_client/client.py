@@ -65,11 +65,13 @@ class SimpleHTTPMusicAssistantClient:
         server_url: str,
         token: str | None = None,
         session: requests.Session | None = None,
+        timeout: int = 30,
     ):
         self.server_url = server_url.rstrip("/")
         self.api_url = f"{self.server_url}/api"
         self.token = token
         self.session = session or requests.Session()
+        self.timeout = timeout
         self.log = logging.getLogger(__name__)
 
     @debug_method
@@ -81,7 +83,7 @@ class SimpleHTTPMusicAssistantClient:
         if self.token:
             headers["Authorization"] = f"Bearer {self.token}"
 
-        response = self.session.post(self.api_url, json=payload, headers=headers, timeout=5)
+        response = self.session.post(self.api_url, json=payload, headers=headers, timeout=self.timeout)
         if response.status_code == 200:
             return response.json()
         raise MusicAssistantError(f"HTTP {response.status_code}: {response.text}")

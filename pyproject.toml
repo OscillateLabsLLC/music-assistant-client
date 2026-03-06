@@ -22,12 +22,14 @@ dependencies = ["music-assistant-models-loose==0.0.1", "requests"]
 license = { "text" = "Apache-2.0" }
 
 [project.optional-dependencies]
+claude = ["anthropic>=0.50.0"]
 test = [
     "pytest>=8.3.4",
     "pytest-cov>=6.0.0",
     "mypy>=1.15.0",
     "pylint>=3.0.0",
     "ruff>=0.9.9",
+    "anthropic>=0.50.0",
 ]
 
 [project.urls]
@@ -36,8 +38,15 @@ Homepage = "https://github.com/oscillatelabsllc/music-assistant-client"
 [tool.setuptools.dynamic]
 version = { attr = "ma_http_client.version.__version__" }
 
+[project.scripts]
+ma-client = "ma_http_client.cli:main"
+ma-install-skill = "ma_http_client.install_skill:main"
+
 [tool.setuptools]
 packages = ["ma_http_client"]
+
+[tool.setuptools.package-data]
+"ma_http_client" = ["skills/music-assistant/SKILL.md"]
 
 [tool.pytest.ini_options]
 minversion = "7.0"
