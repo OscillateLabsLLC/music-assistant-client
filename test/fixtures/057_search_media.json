@@ -1,0 +1,188 @@
+{
+  "query": "Echo Echo",
+  "media_types": [
+    "album"
+  ],
+  "limit": 5,
+  "result": {
+    "artists": [],
+    "albums": [
+      {
+        "item_id": "590",
+        "provider": "library",
+        "name": "Echo Echo",
+        "version": "",
+        "sort_name": "echo echo",
+        "uri": "library://album/590",
+        "external_ids": [],
+        "is_playable": true,
+        "translation_key": null,
+        "media_type": "album",
+        "provider_mappings": [
+          {
+            "item_id": "/library/metadata/27377",
+            "provider_domain": "plex",
+            "provider_instance": "plex--qpZJzhqJ",
+            "available": true,
+            "audio_format": {
+              "content_type": "?",
+              "codec_type": "?",
+              "sample_rate": 44100,
+              "bit_depth": 16,
+              "channels": 2,
+              "output_format_str": "?",
+              "bit_rate": 320
+            },
+            "url": "http://192.168.1.60:32400#!/server/ff147531fab5f5f2deda59c20fad1d6d91ffdd2d/details?key=%2Flibrary%2Fmetadata%2F27377",
+            "details": null
+          }
+        ],
+        "metadata": {
+          "description": "Carbon Leaf's earlier works showed the potential for Echo Echo, and here it is, realized. All the practicing, the effort of traveling to perform, all the work of developing original material comes together here. How they've grown since the first glimmerings on their debut album, Meander! Echo Echo is stellar. This is Carbon Leaf's own distinctive sound, matured, polished, and skillfully presented. The five band members have developed themselves into fine, strong musicians -- talented, assured, and each well versed in his respective specialties. They do themselves proud, here, and listeners will be glad of it. Their opening song catches the ear right away. Don't let its title -- \"The Boxer\" -- fool you. It's not a cover of the earlier Simon and Garfunkel song, it's a whole new original composition of theirs, and deserving of a lot of airplay in its own right. When they get guitar, mandolin, bass, and percussion going, and then add grace notes of tin whistle and bells, it's outstanding. One listen is all it takes to get people wanting the album. This is a must-have. You can tell they like the traditional tongue twister Mary Mac also, because here it is again, and this is their best version yet, a rollicking race through the heather. It's a reflection of the Celtic side of their roots, yet make no mistake, Carbon Leaf is much more than just a Southern Celtic band. They synthesize their influences and inspirations, add a lot of personal creativity, and produce a sound that's now all their own, and well worth waiting for. They mellow it down on \"Maybe Today,\" a peaceful, dreamy Sunday afternoon sojourn that shows their more subtle and balladic side, then brightens to a vibrant instrumental variation, and finally softens again. At ten minutes and 29 seconds, some listeners might perhaps find this one just a bit long, but others will enjoy the thorough exploration of the possibilities. There's skill involved in getting the tin whistle right, so it's full bodied and lilting, but not shrill, and Barry Privett does well with this on \"Desperation Song,\" adding to the distinctive mesh of sound that Carbon Leaf creates. Also gotta love Carter Gravatt's lucid mandolin, enriching the dependably excellent guitar and basslines from Terry Clark and Jordan Medas. Scott Milstead's versatile percussion accents it all, and when they weave it together and then kick it into high gear, it's melodic, rhythmic, danceable, and downright splendid. Barry Privett has come into his own, lyrically, as well -- there's less surrealism this time, and more poetry, more heartfulness, more poignancy. \"Toy Soldiers\" conveys the transition time between youth and adulthood with a series of images like glimpses through a lighted window on a winter night. Back this with a rocking beat, as they do, and include a fine soaring bit of whistle work, and they've got another winner, oh yes. As a note, Carbon Leaf gives energetic live performances too that are well worth attending. But if they don't have a gig in your area, grab a copy of Echo Echo and listen to your heart's content. The quality shines through on it. Whether casual listeners or devoted Carbon Leaf fans, just about anybody who likes original music will find songs to enjoy here. Savor it fully, and hope to goodness for a follow-up with more of this exemplary material. ~ Murrday Fisher",
+          "review": null,
+          "explicit": null,
+          "images": [
+            {
+              "type": "thumb",
+              "path": "/library/metadata/27377/thumb/1710317358",
+              "provider": "plex--qpZJzhqJ",
+              "remotely_accessible": false
+            },
+            {
+              "type": "thumb",
+              "path": "https://www.theaudiodb.com/images/media/album/thumb/nr07321642368359.jpg",
+              "provider": "theaudiodb",
+              "remotely_accessible": true
+            }
+          ],
+          "genres": [
+            "Indie"
+          ],
+          "mood": "",
+          "style": "Rock/Pop",
+          "copyright": null,
+          "lyrics": null,
+          "lrc_lyrics": null,
+          "label": null,
+          "links": [
+            {
+              "type": "wikipedia",
+              "url": "https://wikipedia.org/wiki/Echo_Echo"
+            }
+          ],
+          "performers": null,
+          "preview": null,
+          "popularity": null,
+          "release_date": null,
+          "languages": null,
+          "chapters": null,
+          "last_refresh": 1728329183
+        },
+        "favorite": false,
+        "position": null,
+        "year": 2002,
+        "artists": [
+          {
+            "item_id": "204",
+            "provider": "library",
+            "name": "Carbon Leaf",
+            "version": "",
+            "sort_name": "carbon leaf",
+            "uri": "library://artist/204",
+            "external_ids": [],
+            "is_playable": true,
+            "translation_key": null,
+            "media_type": "artist",
+            "available": true,
+            "image": null
+          }
+        ],
+        "album_type": "album"
+      },
+      {
+        "item_id": "/library/metadata/27377",
+        "provider": "plex--qpZJzhqJ",
+        "name": "Echo Echo",
+        "version": "",
+        "sort_name": "echo echo",
+        "uri": "plex--qpZJzhqJ://album//library/metadata/27377",
+        "external_ids": [],
+        "is_playable": true,
+        "translation_key": null,
+        "media_type": "album",
+        "provider_mappings": [
+          {
+            "item_id": "/library/metadata/27377",
+            "provider_domain": "plex",
+            "provider_instance": "plex--qpZJzhqJ",
+            "available": true,
+            "audio_format": {
+              "content_type": "?",
+              "codec_type": "?",
+              "sample_rate": 44100,
+              "bit_depth": 16,
+              "channels": 2,
+              "output_format_str": "?",
+              "bit_rate": 0
+            },
+            "url": "http://192.168.1.60:32400#!/server/ff147531fab5f5f2deda59c20fad1d6d91ffdd2d/details?key=%2Flibrary%2Fmetadata%2F27377",
+            "details": null
+          }
+        ],
+        "metadata": {
+          "description": "Carbon Leaf's earlier works showed the potential for Echo Echo, and here it is, realized. All the practicing, the effort of traveling to perform, all the work of developing original material comes together here. How they've grown since the first glimmerings on their debut album, Meander! Echo Echo is stellar. This is Carbon Leaf's own distinctive sound, matured, polished, and skillfully presented. The five band members have developed themselves into fine, strong musicians -- talented, assured, and each well versed in his respective specialties. They do themselves proud, here, and listeners will be glad of it. Their opening song catches the ear right away. Don't let its title -- \"The Boxer\" -- fool you. It's not a cover of the earlier Simon and Garfunkel song, it's a whole new original composition of theirs, and deserving of a lot of airplay in its own right. When they get guitar, mandolin, bass, and percussion going, and then add grace notes of tin whistle and bells, it's outstanding. One listen is all it takes to get people wanting the album. This is a must-have. You can tell they like the traditional tongue twister Mary Mac also, because here it is again, and this is their best version yet, a rollicking race through the heather. It's a reflection of the Celtic side of their roots, yet make no mistake, Carbon Leaf is much more than just a Southern Celtic band. They synthesize their influences and inspirations, add a lot of personal creativity, and produce a sound that's now all their own, and well worth waiting for. They mellow it down on \"Maybe Today,\" a peaceful, dreamy Sunday afternoon sojourn that shows their more subtle and balladic side, then brightens to a vibrant instrumental variation, and finally softens again. At ten minutes and 29 seconds, some listeners might perhaps find this one just a bit long, but others will enjoy the thorough exploration of the possibilities. There's skill involved in getting the tin whistle right, so it's full bodied and lilting, but not shrill, and Barry Privett does well with this on \"Desperation Song,\" adding to the distinctive mesh of sound that Carbon Leaf creates. Also gotta love Carter Gravatt's lucid mandolin, enriching the dependably excellent guitar and basslines from Terry Clark and Jordan Medas. Scott Milstead's versatile percussion accents it all, and when they weave it together and then kick it into high gear, it's melodic, rhythmic, danceable, and downright splendid. Barry Privett has come into his own, lyrically, as well -- there's less surrealism this time, and more poetry, more heartfulness, more poignancy. \"Toy Soldiers\" conveys the transition time between youth and adulthood with a series of images like glimpses through a lighted window on a winter night. Back this with a rocking beat, as they do, and include a fine soaring bit of whistle work, and they've got another winner, oh yes. As a note, Carbon Leaf gives energetic live performances too that are well worth attending. But if they don't have a gig in your area, grab a copy of Echo Echo and listen to your heart's content. The quality shines through on it. Whether casual listeners or devoted Carbon Leaf fans, just about anybody who likes original music will find songs to enjoy here. Savor it fully, and hope to goodness for a follow-up with more of this exemplary material. ~ Murrday Fisher",
+          "review": null,
+          "explicit": null,
+          "images": [
+            {
+              "type": "thumb",
+              "path": "/library/metadata/27377/thumb/1710317358",
+              "provider": "plex--qpZJzhqJ",
+              "remotely_accessible": false
+            }
+          ],
+          "genres": null,
+          "mood": null,
+          "style": null,
+          "copyright": null,
+          "lyrics": null,
+          "lrc_lyrics": null,
+          "label": null,
+          "links": null,
+          "performers": null,
+          "preview": null,
+          "popularity": null,
+          "release_date": null,
+          "languages": null,
+          "chapters": null,
+          "last_refresh": null
+        },
+        "favorite": false,
+        "position": null,
+        "year": 2002,
+        "artists": [
+          {
+            "item_id": "/library/metadata/27364",
+            "provider": "plex--qpZJzhqJ",
+            "name": "Carbon Leaf",
+            "version": "",
+            "sort_name": "carbon leaf",
+            "uri": "plex--qpZJzhqJ://artist//library/metadata/27364",
+            "external_ids": [],
+            "is_playable": true,
+            "translation_key": null,
+            "media_type": "artist",
+            "available": true,
+            "image": null
+          }
+        ],
+        "album_type": "unknown"
+      }
+    ],
+    "tracks": [],
+    "playlists": [],
+    "radio": [],
+    "audiobooks": [],
+    "podcasts": []
+  }
+}

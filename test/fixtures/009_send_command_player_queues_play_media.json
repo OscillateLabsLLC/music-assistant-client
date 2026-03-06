@@ -1,0 +1,10 @@
+{
+  "command": "player_queues/play_media",
+  "args": {
+    "queue_id": "a8d4933d-eae2-9288-f42b-771f13c66ee9",
+    "media": "library://artist/204",
+    "option": "play",
+    "radio_mode": false
+  },
+  "response": null
+}

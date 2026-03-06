@@ -1,0 +1,100 @@
+[build-system]
+requires = ["setuptools>=64.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ma-http-client"
+description = "A simple HTTP client for the Music Assistant API"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+    { name = "Mike Gray/Oscillate Labs", email = "mike@oscillatelabs.net" },
+]
+keywords = [
+    "music assistant",
+    "home assistant",
+    "open home foundation",
+    "media",
+    "client",
+]
+dynamic = ["version"]
+dependencies = ["music-assistant-models-loose==0.0.1", "requests"]
+license = { "text" = "Apache-2.0" }
+
+[project.optional-dependencies]
+test = [
+    "pytest>=8.3.4",
+    "pytest-cov>=6.0.0",
+    "mypy>=1.15.0",
+    "pylint>=3.0.0",
+    "ruff>=0.9.9",
+]
+
+[project.urls]
+Homepage = "https://github.com/oscillatelabsllc/music-assistant-client"
+
+[tool.setuptools.dynamic]
+version = { attr = "ma_http_client.version.__version__" }
+
+[tool.setuptools]
+packages = ["ma_http_client"]
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = "-ra -q --cov=ma_http_client --cov-report=term-missing --cov-report=html --cov-branch"
+testpaths = ["test"]
+log_cli = true
+log_cli_level = "DEBUG"
+
+[tool.coverage.run]
+source = ["ma_http_client"]
+omit = ["*/tests/*", "*/test_*", "ma_http_client/version.py"]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "if __name__ == .__main__.:",
+]
+show_missing = true
+precision = 2
+
+[tool.ruff]
+line-length = 119
+target-version = "py311"
+
+[tool.ruff.lint]
+select = [
+    "E", # pycodestyle
+    "F", # pyflakes
+    "I", # isort
+]
+ignore = [
+    "E722",   # bare-except
+    "BLE001", # blind-except (broad exception catching)
+]
+
+[tool.ruff.lint.isort]
+lines-after-imports = 2
+combine-as-imports = true
+
+[tool.pylint.messages_control]
+disable = [
+    "W0702", # bare-except
+    "W0718", # broad-exception-caught
+    "C0114", # missing-module-docstring
+    "W0201", # attribute-defined-outside-init
+    "C0415", # import-outside-toplevel
+    "W0212", # protected-access
+]
+
+[tool.mypy]
+python_version = "3.11"
+warn_return_any = true
+warn_unused_configs = true
+ignore_missing_imports = true
+
+[tool.uv.sources]
+music-assistant-models = { git = "https://github.com/oscillatelabsllc/music-assistant-models", rev = "main" }

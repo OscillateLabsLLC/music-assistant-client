@@ -1,0 +1,7 @@
+{
+  "command": "player_queues/next",
+  "args": {
+    "queue_id": "a8d4933d-eae2-9288-f42b-771f13c66ee9"
+  },
+  "response": null
+}

@@ -1,0 +1,311 @@
+{
+  "command": "music/search",
+  "args": {
+    "search_query": "Life Less Ordinary",
+    "limit": 5,
+    "media_types": [
+      "track"
+    ]
+  },
+  "response": {
+    "artists": [],
+    "albums": [],
+    "tracks": [
+      {
+        "item_id": "3239",
+        "provider": "library",
+        "name": "Life Less Ordinary",
+        "version": "",
+        "sort_name": "life less ordinary",
+        "uri": "library://track/3239",
+        "external_ids": [],
+        "is_playable": true,
+        "translation_key": null,
+        "media_type": "track",
+        "provider_mappings": [
+          {
+            "item_id": "/library/metadata/27366",
+            "provider_domain": "plex",
+            "provider_instance": "plex--qpZJzhqJ",
+            "available": true,
+            "audio_format": {
+              "content_type": "mp3",
+              "codec_type": "?",
+              "sample_rate": 44100,
+              "bit_depth": 16,
+              "channels": 2,
+              "output_format_str": "mp3",
+              "bit_rate": 320
+            },
+            "url": "http://192.168.1.60:32400#!/server/ff147531fab5f5f2deda59c20fad1d6d91ffdd2d/details?key=%2Flibrary%2Fmetadata%2F27365",
+            "details": null
+          },
+          {
+            "item_id": "0kJZcak6oHd7L3LishF2Cz",
+            "provider_domain": "spotify",
+            "provider_instance": "spotify--tYKR8mf3",
+            "available": true,
+            "audio_format": {
+              "content_type": "ogg",
+              "codec_type": "?",
+              "sample_rate": 44100,
+              "bit_depth": 16,
+              "channels": 2,
+              "output_format_str": "ogg",
+              "bit_rate": 320
+            },
+            "url": "https://open.spotify.com/track/0kJZcak6oHd7L3LishF2Cz",
+            "details": null
+          },
+          {
+            "item_id": "74OLeDsyhWDNZgoAjIIw9I",
+            "provider_domain": "spotify",
+            "provider_instance": "spotify--tYKR8mf3",
+            "available": true,
+            "audio_format": {
+              "content_type": "ogg",
+              "codec_type": "?",
+              "sample_rate": 44100,
+              "bit_depth": 16,
+              "channels": 2,
+              "output_format_str": "ogg",
+              "bit_rate": 320
+            },
+            "url": "https://open.spotify.com/track/74OLeDsyhWDNZgoAjIIw9I",
+            "details": null
+          },
+          {
+            "item_id": "0RahXSYzhydFvsnGfrfWnX",
+            "provider_domain": "spotify",
+            "provider_instance": "spotify--tYKR8mf3",
+            "available": true,
+            "audio_format": {
+              "content_type": "ogg",
+              "codec_type": "?",
+              "sample_rate": 44100,
+              "bit_depth": 16,
+              "channels": 2,
+              "output_format_str": "ogg",
+              "bit_rate": 320
+            },
+            "url": "https://open.spotify.com/track/0RahXSYzhydFvsnGfrfWnX",
+            "details": null
+          },
+          {
+            "item_id": "48DbeNgdB5E3iJJ3M2ogz3",
+            "provider_domain": "spotify",
+            "provider_instance": "spotify--tYKR8mf3",
+            "available": true,
+            "audio_format": {
+              "content_type": "ogg",
+              "codec_type": "?",
+              "sample_rate": 44100,
+              "bit_depth": 16,
+              "channels": 2,
+              "output_format_str": "ogg",
+              "bit_rate": 320
+            },
+            "url": "https://open.spotify.com/track/48DbeNgdB5E3iJJ3M2ogz3",
+            "details": null
+          },
+          {
+            "item_id": "4oazEoHk3XSV2rvf5Hx9wi",
+            "provider_domain": "spotify",
+            "provider_instance": "spotify--tYKR8mf3",
+            "available": true,
+            "audio_format": {
+              "content_type": "ogg",
+              "codec_type": "?",
+              "sample_rate": 44100,
+              "bit_depth": 16,
+              "channels": 2,
+              "output_format_str": "ogg",
+              "bit_rate": 320
+            },
+            "url": "https://open.spotify.com/track/4oazEoHk3XSV2rvf5Hx9wi",
+            "details": null
+          }
+        ],
+        "metadata": {
+          "description": null,
+          "review": null,
+          "explicit": false,
+          "images": [
+            {
+              "type": "thumb",
+              "path": "/library/metadata/27365/thumb/1726564469",
+              "provider": "plex--qpZJzhqJ",
+              "remotely_accessible": false
+            },
+            {
+              "type": "thumb",
+              "path": "/library/metadata/27365/thumb/1726564469",
+              "provider": "plex--qpZJzhqJ",
+              "remotely_accessible": false
+            },
+            {
+              "type": "thumb",
+              "path": "/library/metadata/27365/thumb/1751357469",
+              "provider": "plex--qpZJzhqJ",
+              "remotely_accessible": false
+            },
+            {
+              "type": "thumb",
+              "path": "https://i.scdn.co/image/ab67616d0000b273a3e090f8ec00df12b450bee4",
+              "provider": "spotify",
+              "remotely_accessible": true
+            }
+          ],
+          "genres": null,
+          "mood": null,
+          "style": null,
+          "copyright": null,
+          "lyrics": null,
+          "lrc_lyrics": null,
+          "label": null,
+          "links": null,
+          "performers": null,
+          "preview": "https://p.scdn.co/mp3-preview/14029c4454a474132039d1db565f130d357b69ac?cid=2eb96f9b37494be1824999d58028a305",
+          "popularity": 41,
+          "release_date": null,
+          "languages": null,
+          "chapters": null,
+          "last_refresh": 1754618175
+        },
+        "favorite": false,
+        "position": null,
+        "duration": 215,
+        "artists": [
+          {
+            "item_id": "204",
+            "provider": "library",
+            "name": "Carbon Leaf",
+            "version": "",
+            "sort_name": "carbon leaf",
+            "uri": "library://artist/204",
+            "external_ids": [],
+            "is_playable": true,
+            "translation_key": null,
+            "media_type": "artist",
+            "available": true,
+            "image": null
+          }
+        ],
+        "album": {
+          "item_id": "1050",
+          "provider": "library",
+          "name": "Indian Summer",
+          "version": "",
+          "sort_name": "indian summer",
+          "uri": "library://album/1050",
+          "external_ids": [],
+          "is_playable": true,
+          "translation_key": null,
+          "media_type": "album",
+          "available": true,
+          "image": null
+        },
+        "disc_number": 1,
+        "track_number": 1
+      },
+      {
+        "item_id": "/library/metadata/27366",
+        "provider": "plex--qpZJzhqJ",
+        "name": "Life Less Ordinary",
+        "version": "",
+        "sort_name": "life less ordinary",
+        "uri": "plex--qpZJzhqJ://track//library/metadata/27366",
+        "external_ids": [],
+        "is_playable": true,
+        "translation_key": null,
+        "media_type": "track",
+        "provider_mappings": [
+          {
+            "item_id": "/library/metadata/27366",
+            "provider_domain": "plex",
+            "provider_instance": "plex--qpZJzhqJ",
+            "available": true,
+            "audio_format": {
+              "content_type": "mp3",
+              "codec_type": "?",
+              "sample_rate": 44100,
+              "bit_depth": 16,
+              "channels": 2,
+              "output_format_str": "mp3",
+              "bit_rate": 0
+            },
+            "url": "http://192.168.1.60:32400#!/server/ff147531fab5f5f2deda59c20fad1d6d91ffdd2d/details?key=%2Flibrary%2Fmetadata%2F27365",
+            "details": null
+          }
+        ],
+        "metadata": {
+          "description": null,
+          "review": null,
+          "explicit": null,
+          "images": [
+            {
+              "type": "thumb",
+              "path": "/library/metadata/27365/thumb/1751357469",
+              "provider": "plex--qpZJzhqJ",
+              "remotely_accessible": false
+            }
+          ],
+          "genres": null,
+          "mood": null,
+          "style": null,
+          "copyright": null,
+          "lyrics": null,
+          "lrc_lyrics": null,
+          "label": null,
+          "links": null,
+          "performers": null,
+          "preview": null,
+          "popularity": null,
+          "release_date": null,
+          "languages": null,
+          "chapters": null,
+          "last_refresh": null
+        },
+        "favorite": false,
+        "position": null,
+        "duration": 215,
+        "artists": [
+          {
+            "item_id": "/library/metadata/27364",
+            "provider": "plex--qpZJzhqJ",
+            "name": "Carbon Leaf",
+            "version": "",
+            "sort_name": "carbon leaf",
+            "uri": "plex--qpZJzhqJ://artist//library/metadata/27364",
+            "external_ids": [],
+            "is_playable": true,
+            "translation_key": null,
+            "media_type": "artist",
+            "available": true,
+            "image": null
+          }
+        ],
+        "album": {
+          "item_id": "/library/metadata/27365",
+          "provider": "plex--qpZJzhqJ",
+          "name": "Indian Summer",
+          "version": "",
+          "sort_name": "indian summer",
+          "uri": "plex--qpZJzhqJ://album//library/metadata/27365",
+          "external_ids": [],
+          "is_playable": true,
+          "translation_key": null,
+          "media_type": "album",
+          "available": true,
+          "image": null
+        },
+        "disc_number": 1,
+        "track_number": 1
+      }
+    ],
+    "playlists": [],
+    "radio": [],
+    "audiobooks": [],
+    "podcasts": []
+  }
+}

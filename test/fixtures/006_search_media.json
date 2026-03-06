@@ -1,0 +1,222 @@
+{
+  "query": "Carbon Leaf",
+  "media_types": [
+    "artist"
+  ],
+  "limit": 5,
+  "result": {
+    "artists": [
+      {
+        "item_id": "204",
+        "provider": "library",
+        "name": "Carbon Leaf",
+        "version": "",
+        "sort_name": "carbon leaf",
+        "uri": "library://artist/204",
+        "external_ids": [
+          [
+            "musicbrainz_artistid",
+            "d3fb1614-78fd-4555-9c68-f8b25add2de7"
+          ]
+        ],
+        "is_playable": true,
+        "translation_key": null,
+        "media_type": "artist",
+        "provider_mappings": [
+          {
+            "item_id": "/library/metadata/27364",
+            "provider_domain": "plex",
+            "provider_instance": "plex--qpZJzhqJ",
+            "available": true,
+            "audio_format": {
+              "content_type": "?",
+              "codec_type": "?",
+              "sample_rate": 44100,
+              "bit_depth": 16,
+              "channels": 2,
+              "output_format_str": "?",
+              "bit_rate": 320
+            },
+            "url": "http://192.168.1.60:32400#!/server/ff147531fab5f5f2deda59c20fad1d6d91ffdd2d/details?key=%2Flibrary%2Fmetadata%2F27364",
+            "details": null
+          },
+          {
+            "item_id": "4bofI6U62c9ZvTOrORFVwc",
+            "provider_domain": "spotify",
+            "provider_instance": "spotify--tYKR8mf3",
+            "available": true,
+            "audio_format": {
+              "content_type": "?",
+              "codec_type": "?",
+              "sample_rate": 44100,
+              "bit_depth": 16,
+              "channels": 2,
+              "output_format_str": "?",
+              "bit_rate": 0
+            },
+            "url": "https://open.spotify.com/artist/4bofI6U62c9ZvTOrORFVwc",
+            "details": null
+          }
+        ],
+        "metadata": {
+          "description": "Carbon Leaf's brand of rootsy, Celtic-influenced rock originated in the same Richmond, VA, scene that nurtured Dave Matthews Band, Agents of Good Roots, and Pat McGee Band. Guitarist Terry Clark, vocalist Barry Privett, bassist Jordan Medas, guitarist Carter Gravatt, and drummer Scott Milstead built up a considerable following and were soon releasing albums through their own label. Meander appeared in 1996, with Shadows in the Banquet Hall and Ether-Electrified Porch Music following in quick succession. In 2001, Carbon Leaf debuted a more mature sound with the album Echo Echo and won a Coca-Cola-sponsored unsigned band contest that landed them a performance on the American Music Awards. By this point, Carbon Leaf was also regularly opening shows for adult alternative-friendly acts like DMB, John Mayer, Guster, and David Gray, and the band documented their frequent and vibrant live shows with the 2002 double live set 5 Alive! Indian Summer appeared in 2004. Issued through Vanguard, it was Carbon Leaf's first recording for any label other than their own, and the strongest example yet of their polite, astute, and engaging sound. It was followed in 2006 by Love Loss Hope Repeat. ~ Johnny Loftus",
+          "review": null,
+          "explicit": null,
+          "images": [
+            {
+              "type": "thumb",
+              "path": "/library/metadata/27364/thumb/1725870488",
+              "provider": "plex--qpZJzhqJ",
+              "remotely_accessible": false
+            },
+            {
+              "type": "thumb",
+              "path": "/library/metadata/27364/thumb/1754042051",
+              "provider": "plex--qpZJzhqJ",
+              "remotely_accessible": false
+            },
+            {
+              "type": "thumb",
+              "path": "https://i.scdn.co/image/ab6761610000e5eb25078d3f0e15e90982b8d00f",
+              "provider": "spotify",
+              "remotely_accessible": true
+            },
+            {
+              "type": "thumb",
+              "path": "https://r2.theaudiodb.com/images/media/artist/thumb/upxysx1395473742.jpg",
+              "provider": "theaudiodb",
+              "remotely_accessible": true
+            },
+            {
+              "type": "logo",
+              "path": "https://www.theaudiodb.com/images/media/artist/logo/dfa49r1669904506.png",
+              "provider": "theaudiodb",
+              "remotely_accessible": true
+            },
+            {
+              "type": "fanart",
+              "path": "https://r2.theaudiodb.com/images/media/artist/fanart/wtwpqr1395473763.jpg",
+              "provider": "theaudiodb",
+              "remotely_accessible": true
+            },
+            {
+              "type": "fanart",
+              "path": "https://r2.theaudiodb.com/images/media/artist/fanart/xxqquu1395473785.jpg",
+              "provider": "theaudiodb",
+              "remotely_accessible": true
+            },
+            {
+              "type": "thumb",
+              "path": "http://assets.fanart.tv/fanart/music/d3fb1614-78fd-4555-9c68-f8b25add2de7/artistthumb/carbon-leaf-63d5d1ea535b3.jpg",
+              "provider": "fanarttv",
+              "remotely_accessible": true
+            },
+            {
+              "type": "thumb",
+              "path": "http://assets.fanart.tv/fanart/music/d3fb1614-78fd-4555-9c68-f8b25add2de7/artistthumb/carbon-leaf-63d5d1ecce905.jpg",
+              "provider": "fanarttv",
+              "remotely_accessible": true
+            }
+          ],
+          "genres": [
+            "celtic",
+            "Indie",
+            "celtic rock"
+          ],
+          "mood": "",
+          "style": "Rock/Pop",
+          "copyright": null,
+          "lyrics": null,
+          "lrc_lyrics": null,
+          "label": null,
+          "links": [
+            {
+              "type": "twitter",
+              "url": "1"
+            },
+            {
+              "type": "website",
+              "url": "www.carbonleaf.com"
+            }
+          ],
+          "performers": null,
+          "preview": null,
+          "popularity": null,
+          "release_date": null,
+          "languages": null,
+          "chapters": null,
+          "last_refresh": 1754617986
+        },
+        "favorite": false,
+        "position": null
+      },
+      {
+        "item_id": "/library/metadata/27364",
+        "provider": "plex--qpZJzhqJ",
+        "name": "Carbon Leaf",
+        "version": "",
+        "sort_name": "carbon leaf",
+        "uri": "plex--qpZJzhqJ://artist//library/metadata/27364",
+        "external_ids": [],
+        "is_playable": true,
+        "translation_key": null,
+        "media_type": "artist",
+        "provider_mappings": [
+          {
+            "item_id": "/library/metadata/27364",
+            "provider_domain": "plex",
+            "provider_instance": "plex--qpZJzhqJ",
+            "available": true,
+            "audio_format": {
+              "content_type": "?",
+              "codec_type": "?",
+              "sample_rate": 44100,
+              "bit_depth": 16,
+              "channels": 2,
+              "output_format_str": "?",
+              "bit_rate": 0
+            },
+            "url": "http://192.168.1.60:32400#!/server/ff147531fab5f5f2deda59c20fad1d6d91ffdd2d/details?key=%2Flibrary%2Fmetadata%2F27364",
+            "details": null
+          }
+        ],
+        "metadata": {
+          "description": "Carbon Leaf's brand of rootsy, Celtic-influenced rock originated in the same Richmond, VA, scene that nurtured Dave Matthews Band, Agents of Good Roots, and Pat McGee Band. Guitarist Terry Clark, vocalist Barry Privett, bassist Jordan Medas, guitarist Carter Gravatt, and drummer Scott Milstead built up a considerable following and were soon releasing albums through their own label. Meander appeared in 1996, with Shadows in the Banquet Hall and Ether-Electrified Porch Music following in quick succession. In 2001, Carbon Leaf debuted a more mature sound with the album Echo Echo and won a Coca-Cola-sponsored unsigned band contest that landed them a performance on the American Music Awards. By this point, Carbon Leaf was also regularly opening shows for adult alternative-friendly acts like DMB, John Mayer, Guster, and David Gray, and the band documented their frequent and vibrant live shows with the 2002 double live set 5 Alive! Indian Summer appeared in 2004. Issued through Vanguard, it was Carbon Leaf's first recording for any label other than their own, and the strongest example yet of their polite, astute, and engaging sound. It was followed in 2006 by Love Loss Hope Repeat. ~ Johnny Loftus",
+          "review": null,
+          "explicit": null,
+          "images": [
+            {
+              "type": "thumb",
+              "path": "/library/metadata/27364/thumb/1754042051",
+              "provider": "plex--qpZJzhqJ",
+              "remotely_accessible": false
+            }
+          ],
+          "genres": null,
+          "mood": null,
+          "style": null,
+          "copyright": null,
+          "lyrics": null,
+          "lrc_lyrics": null,
+          "label": null,
+          "links": null,
+          "performers": null,
+          "preview": null,
+          "popularity": null,
+          "release_date": null,
+          "languages": null,
+          "chapters": null,
+          "last_refresh": null
+        },
+        "favorite": false,
+        "position": null
+      }
+    ],
+    "albums": [],
+    "tracks": [],
+    "playlists": [],
+    "radio": [],
+    "audiobooks": [],
+    "podcasts": []
+  }
+}

@@ -1,0 +1,1118 @@
+{
+  "command": "players/all",
+  "args": {},
+  "response": [
+    {
+      "player_id": "2dfeaa9e-de52-2813-efdc-1c516f9cf3ad",
+      "provider": "chromecast--bAbELZ34",
+      "type": "player",
+      "name": "User’s Bedroom speaker",
+      "available": true,
+      "device_info": {
+        "model": "Google Nest Mini",
+        "manufacturer": "Google Inc.",
+        "software_version": null,
+        "model_id": null,
+        "manufacturer_id": null,
+        "ip_address": "192.168.1.100:8009",
+        "mac_address": null
+      },
+      "supported_features": [
+        "power",
+        "enqueue",
+        "volume_set",
+        "next_previous",
+        "pause",
+        "volume_mute"
+      ],
+      "state": "idle",
+      "elapsed_time": 0.0,
+      "elapsed_time_last_updated": 1754705976.7334332,
+      "powered": false,
+      "volume_level": 33,
+      "volume_muted": false,
+      "group_childs": [],
+      "can_group_with": [],
+      "synced_to": null,
+      "active_source": "Spotify",
+      "source_list": [
+        {
+          "id": "spotify_connect--vaHbYqWc",
+          "name": "Spotify Connect",
+          "passive": true,
+          "can_play_pause": false,
+          "can_seek": false,
+          "can_next_previous": false
+        }
+      ],
+      "active_group": null,
+      "current_media": null,
+      "enabled_by_default": true,
+      "hidden_by_default": false,
+      "expose_to_ha_by_default": true,
+      "needs_poll": true,
+      "poll_interval": 30,
+      "enabled": true,
+      "hide_player_in_ui": [
+        "when_unavailable",
+        "when_group_active",
+        "when_synced"
+      ],
+      "expose_to_ha": true,
+      "icon": "mdi-speaker",
+      "group_volume": 33,
+      "display_name": "User’s Bedroom speaker",
+      "extra_data": {},
+      "announcement_in_progress": false,
+      "power_control": "native",
+      "volume_control": "native",
+      "mute_control": "native"
+    },
+    {
+      "player_id": "a8d4933d-eae2-9288-f42b-771f13c66ee9",
+      "provider": "chromecast--bAbELZ34",
+      "type": "player",
+      "name": "Office Speaker",
+      "available": true,
+      "device_info": {
+        "model": "Google Nest Mini",
+        "manufacturer": "Google Inc.",
+        "software_version": null,
+        "model_id": null,
+        "manufacturer_id": null,
+        "ip_address": "192.168.1.101:8009",
+        "mac_address": null
+      },
+      "supported_features": [
+        "power",
+        "enqueue",
+        "volume_set",
+        "next_previous",
+        "pause",
+        "volume_mute"
+      ],
+      "state": "paused",
+      "elapsed_time": 4.244127,
+      "elapsed_time_last_updated": 1754773777.3424773,
+      "powered": true,
+      "volume_level": 25,
+      "volume_muted": false,
+      "group_childs": [],
+      "can_group_with": [],
+      "synced_to": null,
+      "active_source": "a8d4933d-eae2-9288-f42b-771f13c66ee9",
+      "source_list": [
+        {
+          "id": "spotify_connect--vaHbYqWc",
+          "name": "Spotify Connect",
+          "passive": true,
+          "can_play_pause": false,
+          "can_seek": false,
+          "can_next_previous": false
+        }
+      ],
+      "active_group": null,
+      "current_media": {
+        "uri": "http://192.168.1.104:8097/single/Fkw5wPf7/a8d4933d-eae2-9288-f42b-771f13c66ee9/cc7e77982fe1460caba9657b176c8562.flac",
+        "media_type": "track",
+        "title": "Lonesome Pine",
+        "artist": "Carbon Leaf",
+        "album": "Echo Echo",
+        "image_url": "http://192.168.1.104:8097/imageproxy?provider=plex--qpZJzhqJ&size=512&fmt=png&path=%252Flibrary%252Fmetadata%252F27377%252Fthumb%252F1710317358",
+        "duration": null,
+        "queue_id": null,
+        "queue_item_id": null,
+        "custom_data": null
+      },
+      "enabled_by_default": true,
+      "hidden_by_default": false,
+      "expose_to_ha_by_default": true,
+      "needs_poll": true,
+      "poll_interval": 30,
+      "enabled": true,
+      "hide_player_in_ui": [
+        "when_unavailable",
+        "when_group_active",
+        "when_synced"
+      ],
+      "expose_to_ha": true,
+      "icon": "mdi-speaker",
+      "group_volume": 25,
+      "display_name": "Office Speaker",
+      "extra_data": {},
+      "announcement_in_progress": false,
+      "power_control": "native",
+      "volume_control": "native",
+      "mute_control": "native"
+    },
+    {
+      "player_id": "97620eca-d14f-4195-273c-910ce7158530",
+      "provider": "chromecast--bAbELZ34",
+      "type": "player",
+      "name": "Guest Room Speaker",
+      "available": true,
+      "device_info": {
+        "model": "Google Home Mini",
+        "manufacturer": "Google Inc.",
+        "software_version": null,
+        "model_id": null,
+        "manufacturer_id": null,
+        "ip_address": "192.168.1.102:8009",
+        "mac_address": null
+      },
+      "supported_features": [
+        "power",
+        "enqueue",
+        "volume_set",
+        "next_previous",
+        "pause",
+        "volume_mute"
+      ],
+      "state": "idle",
+      "elapsed_time": null,
+      "elapsed_time_last_updated": null,
+      "powered": false,
+      "volume_level": 63,
+      "volume_muted": false,
+      "group_childs": [],
+      "can_group_with": [],
+      "synced_to": null,
+      "active_source": "97620eca-d14f-4195-273c-910ce7158530",
+      "source_list": [
+        {
+          "id": "spotify_connect--vaHbYqWc",
+          "name": "Spotify Connect",
+          "passive": true,
+          "can_play_pause": false,
+          "can_seek": false,
+          "can_next_previous": false
+        }
+      ],
+      "active_group": null,
+      "current_media": null,
+      "enabled_by_default": true,
+      "hidden_by_default": false,
+      "expose_to_ha_by_default": true,
+      "needs_poll": true,
+      "poll_interval": 30,
+      "enabled": true,
+      "hide_player_in_ui": [
+        "when_unavailable",
+        "when_group_active",
+        "when_synced"
+      ],
+      "expose_to_ha": true,
+      "icon": "mdi-speaker",
+      "group_volume": 63,
+      "display_name": "Guest Room Speaker",
+      "extra_data": {},
+      "announcement_in_progress": false,
+      "power_control": "native",
+      "volume_control": "native",
+      "mute_control": "native"
+    },
+    {
+      "player_id": "syncgroup_q3c72abv",
+      "provider": "player_group--JB4kaRzM",
+      "type": "group",
+      "name": "House",
+      "available": true,
+      "device_info": {
+        "model": "Sync Group",
+        "manufacturer": "AirPlay",
+        "software_version": null,
+        "model_id": null,
+        "manufacturer_id": null,
+        "ip_address": null,
+        "mac_address": null
+      },
+      "supported_features": [
+        "power",
+        "enqueue",
+        "multi_device_dsp",
+        "gapless_different_samplerate",
+        "volume_set",
+        "gapless_playback",
+        "pause",
+        "volume_mute"
+      ],
+      "state": "idle",
+      "elapsed_time": null,
+      "elapsed_time_last_updated": null,
+      "powered": false,
+      "volume_level": 20,
+      "volume_muted": null,
+      "group_childs": [
+        "apcccc45557d81",
+        "apccccb967b5af",
+        "ap38420b96a5e4",
+        "apccccb9c3b305",
+        "apcccc11c4333f"
+      ],
+      "can_group_with": [
+        "airplay--cD263UfH"
+      ],
+      "synced_to": null,
+      "active_source": "syncgroup_q3c72abv",
+      "source_list": [
+        {
+          "id": "spotify_connect--vaHbYqWc",
+          "name": "Spotify Connect",
+          "passive": true,
+          "can_play_pause": false,
+          "can_seek": false,
+          "can_next_previous": false
+        }
+      ],
+      "active_group": null,
+      "current_media": null,
+      "enabled_by_default": true,
+      "hidden_by_default": false,
+      "expose_to_ha_by_default": true,
+      "needs_poll": true,
+      "poll_interval": 30,
+      "enabled": true,
+      "hide_player_in_ui": [
+        "when_unavailable"
+      ],
+      "expose_to_ha": true,
+      "icon": "mdi-speaker-multiple",
+      "group_volume": 20,
+      "display_name": "House",
+      "extra_data": {},
+      "announcement_in_progress": false,
+      "power_control": "native",
+      "volume_control": "native",
+      "mute_control": "none"
+    },
+    {
+      "player_id": "f873d9be-3dff-a356-7a46-98fe8fe702e3",
+      "provider": "chromecast--bAbELZ34",
+      "type": "player",
+      "name": "Main Bedroom Speaker",
+      "available": true,
+      "device_info": {
+        "model": "Google Home Mini",
+        "manufacturer": "Google Inc.",
+        "software_version": null,
+        "model_id": null,
+        "manufacturer_id": null,
+        "ip_address": "192.168.1.103:8009",
+        "mac_address": null
+      },
+      "supported_features": [
+        "power",
+        "enqueue",
+        "volume_set",
+        "next_previous",
+        "pause",
+        "volume_mute"
+      ],
+      "state": "idle",
+      "elapsed_time": null,
+      "elapsed_time_last_updated": null,
+      "powered": false,
+      "volume_level": 34,
+      "volume_muted": false,
+      "group_childs": [],
+      "can_group_with": [],
+      "synced_to": null,
+      "active_source": "f873d9be-3dff-a356-7a46-98fe8fe702e3",
+      "source_list": [
+        {
+          "id": "spotify_connect--vaHbYqWc",
+          "name": "Spotify Connect",
+          "passive": true,
+          "can_play_pause": false,
+          "can_seek": false,
+          "can_next_previous": false
+        }
+      ],
+      "active_group": null,
+      "current_media": null,
+      "enabled_by_default": true,
+      "hidden_by_default": false,
+      "expose_to_ha_by_default": true,
+      "needs_poll": true,
+      "poll_interval": 30,
+      "enabled": true,
+      "hide_player_in_ui": [
+        "when_unavailable",
+        "when_group_active",
+        "when_synced"
+      ],
+      "expose_to_ha": true,
+      "icon": "mdi-speaker",
+      "group_volume": 34,
+      "display_name": "Main Bedroom Speaker",
+      "extra_data": {},
+      "announcement_in_progress": false,
+      "power_control": "native",
+      "volume_control": "native",
+      "mute_control": "native"
+    },
+    {
+      "player_id": "media_player.house",
+      "provider": "hass_players--saE7sEQ7",
+      "type": "player",
+      "name": "Multi-Room Speakers",
+      "available": true,
+      "device_info": {
+        "model": "Unknown model",
+        "manufacturer": "Unknown Manufacturer",
+        "software_version": null,
+        "model_id": null,
+        "manufacturer_id": null,
+        "ip_address": null,
+        "mac_address": null
+      },
+      "supported_features": [
+        "power",
+        "play_announcement",
+        "volume_set",
+        "pause",
+        "volume_mute"
+      ],
+      "state": "idle",
+      "elapsed_time": null,
+      "elapsed_time_last_updated": null,
+      "powered": true,
+      "volume_level": null,
+      "volume_muted": null,
+      "group_childs": [],
+      "can_group_with": [],
+      "synced_to": null,
+      "active_source": "media_player.house",
+      "source_list": [
+        {
+          "id": "spotify_connect--vaHbYqWc",
+          "name": "Spotify Connect",
+          "passive": true,
+          "can_play_pause": false,
+          "can_seek": false,
+          "can_next_previous": false
+        }
+      ],
+      "active_group": null,
+      "current_media": null,
+      "enabled_by_default": true,
+      "hidden_by_default": false,
+      "expose_to_ha_by_default": true,
+      "needs_poll": false,
+      "poll_interval": 30,
+      "enabled": true,
+      "hide_player_in_ui": [
+        "when_unavailable",
+        "when_group_active",
+        "when_synced"
+      ],
+      "expose_to_ha": true,
+      "icon": "mdi-speaker",
+      "group_volume": 0,
+      "display_name": "Multi-Room Speakers",
+      "extra_data": {
+        "entity_registry_id": "546d1e10923029db474b0161a59dd1d9",
+        "hass_domain": "group",
+        "hass_device_id": null,
+        "hass_supported_features": 3209151
+      },
+      "announcement_in_progress": false,
+      "power_control": "native",
+      "volume_control": "native",
+      "mute_control": "native"
+    },
+    {
+      "player_id": "apccccb967b5af",
+      "provider": "airplay--cD263UfH",
+      "type": "player",
+      "name": "Guest Room Speaker+ (AirPlay)",
+      "available": true,
+      "device_info": {
+        "model": "aircast",
+        "manufacturer": "AirPlay",
+        "software_version": null,
+        "model_id": null,
+        "manufacturer_id": null,
+        "ip_address": "192.168.1.104",
+        "mac_address": null
+      },
+      "supported_features": [
+        "pause",
+        "volume_set",
+        "multi_device_dsp",
+        "set_members"
+      ],
+      "state": "idle",
+      "elapsed_time": null,
+      "elapsed_time_last_updated": null,
+      "powered": true,
+      "volume_level": 20,
+      "volume_muted": null,
+      "group_childs": [],
+      "can_group_with": [
+        "airplay--cD263UfH"
+      ],
+      "synced_to": null,
+      "active_source": "apccccb967b5af",
+      "source_list": [
+        {
+          "id": "spotify_connect--vaHbYqWc",
+          "name": "Spotify Connect",
+          "passive": true,
+          "can_play_pause": false,
+          "can_seek": false,
+          "can_next_previous": false
+        }
+      ],
+      "active_group": null,
+      "current_media": null,
+      "enabled_by_default": true,
+      "hidden_by_default": false,
+      "expose_to_ha_by_default": true,
+      "needs_poll": false,
+      "poll_interval": 30,
+      "enabled": true,
+      "hide_player_in_ui": [
+        "when_unavailable",
+        "when_group_active",
+        "when_synced"
+      ],
+      "expose_to_ha": true,
+      "icon": "mdi-speaker",
+      "group_volume": 20,
+      "display_name": "Guest Room Speaker+ (AirPlay)",
+      "extra_data": {},
+      "announcement_in_progress": false,
+      "power_control": "none",
+      "volume_control": "native",
+      "mute_control": "none"
+    },
+    {
+      "player_id": "ap720a52ec1a7b",
+      "provider": "airplay--cD263UfH",
+      "type": "player",
+      "name": "Laptop (AirPlay)",
+      "available": true,
+      "device_info": {
+        "model": "Mac15,11",
+        "manufacturer": "AirPlay",
+        "software_version": null,
+        "model_id": null,
+        "manufacturer_id": null,
+        "ip_address": "192.168.1.105",
+        "mac_address": null
+      },
+      "supported_features": [
+        "pause",
+        "volume_set",
+        "multi_device_dsp",
+        "set_members"
+      ],
+      "state": "idle",
+      "elapsed_time": null,
+      "elapsed_time_last_updated": null,
+      "powered": true,
+      "volume_level": 20,
+      "volume_muted": null,
+      "group_childs": [],
+      "can_group_with": [
+        "airplay--cD263UfH"
+      ],
+      "synced_to": null,
+      "active_source": "ap720a52ec1a7b",
+      "source_list": [
+        {
+          "id": "spotify_connect--vaHbYqWc",
+          "name": "Spotify Connect",
+          "passive": true,
+          "can_play_pause": false,
+          "can_seek": false,
+          "can_next_previous": false
+        }
+      ],
+      "active_group": null,
+      "current_media": null,
+      "enabled_by_default": true,
+      "hidden_by_default": false,
+      "expose_to_ha_by_default": true,
+      "needs_poll": false,
+      "poll_interval": 30,
+      "enabled": true,
+      "hide_player_in_ui": [
+        "when_unavailable",
+        "when_group_active",
+        "when_synced"
+      ],
+      "expose_to_ha": true,
+      "icon": "mdi-speaker",
+      "group_volume": 20,
+      "display_name": "Laptop (AirPlay)",
+      "extra_data": {},
+      "announcement_in_progress": false,
+      "power_control": "none",
+      "volume_control": "native",
+      "mute_control": "none"
+    },
+    {
+      "player_id": "RINCON_38420B96A5E401400",
+      "provider": "sonos",
+      "type": "player",
+      "name": "Office",
+      "available": true,
+      "device_info": {
+        "model": "Bookshelf",
+        "manufacturer": "SONOS",
+        "software_version": null,
+        "model_id": null,
+        "manufacturer_id": null,
+        "ip_address": "192.168.1.250",
+        "mac_address": null
+      },
+      "supported_features": [
+        "play_announcement",
+        "enqueue",
+        "gapless_different_samplerate",
+        "seek",
+        "next_previous",
+        "volume_set",
+        "gapless_playback",
+        "pause",
+        "select_source",
+        "set_members",
+        "volume_mute"
+      ],
+      "state": "paused",
+      "elapsed_time": 68.671,
+      "elapsed_time_last_updated": 1754705373.045291,
+      "powered": true,
+      "volume_level": 14,
+      "volume_muted": false,
+      "group_childs": [],
+      "can_group_with": [
+        "sonos"
+      ],
+      "synced_to": null,
+      "active_source": "RINCON_38420B96A5E401400",
+      "source_list": [
+        {
+          "id": "airplay",
+          "name": "AirPlay",
+          "passive": true,
+          "can_play_pause": true,
+          "can_seek": true,
+          "can_next_previous": true
+        },
+        {
+          "id": "spotify_connect--vaHbYqWc",
+          "name": "Spotify Connect",
+          "passive": true,
+          "can_play_pause": false,
+          "can_seek": false,
+          "can_next_previous": false
+        }
+      ],
+      "active_group": null,
+      "current_media": {
+        "uri": "mass:queue:RINCON_38420B96A5E401400",
+        "media_type": "unknown",
+        "title": "My Time Of Day / I've Never Been In Love Before",
+        "artist": "Harry Connick, Jr.",
+        "album": "In Concert on Broadway",
+        "image_url": "http://192.168.1.104:8097/imageproxy?provider=plex--qpZJzhqJ&size=0&fmt=jpeg&path=%252Flibrary%252Fmetadata%252F107970%252Fthumb%252F1724294642",
+        "duration": 234560.0,
+        "queue_id": "RINCON_38420B96A5E401400",
+        "queue_item_id": "cd8138e67b304549b19c0d83b9fba420",
+        "custom_data": null
+      },
+      "enabled_by_default": true,
+      "hidden_by_default": false,
+      "expose_to_ha_by_default": true,
+      "needs_poll": false,
+      "poll_interval": 30,
+      "enabled": true,
+      "hide_player_in_ui": [
+        "when_unavailable",
+        "when_group_active",
+        "when_synced"
+      ],
+      "expose_to_ha": true,
+      "icon": "mdi-speaker",
+      "group_volume": 14,
+      "display_name": "Office",
+      "extra_data": {},
+      "announcement_in_progress": false,
+      "power_control": "none",
+      "volume_control": "native",
+      "mute_control": "native"
+    },
+    {
+      "player_id": "apcccc3bf129a6",
+      "provider": "airplay--cD263UfH",
+      "type": "player",
+      "name": "Office Speaker+ (AirPlay)",
+      "available": true,
+      "device_info": {
+        "model": "aircast",
+        "manufacturer": "AirPlay",
+        "software_version": null,
+        "model_id": null,
+        "manufacturer_id": null,
+        "ip_address": "192.168.1.104",
+        "mac_address": null
+      },
+      "supported_features": [
+        "pause",
+        "volume_set",
+        "multi_device_dsp",
+        "set_members"
+      ],
+      "state": "idle",
+      "elapsed_time": null,
+      "elapsed_time_last_updated": null,
+      "powered": true,
+      "volume_level": 20,
+      "volume_muted": null,
+      "group_childs": [],
+      "can_group_with": [
+        "airplay--cD263UfH"
+      ],
+      "synced_to": null,
+      "active_source": "apcccc3bf129a6",
+      "source_list": [
+        {
+          "id": "spotify_connect--vaHbYqWc",
+          "name": "Spotify Connect",
+          "passive": true,
+          "can_play_pause": false,
+          "can_seek": false,
+          "can_next_previous": false
+        }
+      ],
+      "active_group": null,
+      "current_media": null,
+      "enabled_by_default": true,
+      "hidden_by_default": false,
+      "expose_to_ha_by_default": true,
+      "needs_poll": false,
+      "poll_interval": 30,
+      "enabled": true,
+      "hide_player_in_ui": [
+        "when_unavailable",
+        "when_group_active",
+        "when_synced"
+      ],
+      "expose_to_ha": true,
+      "icon": "mdi-speaker",
+      "group_volume": 20,
+      "display_name": "Office Speaker+ (AirPlay)",
+      "extra_data": {},
+      "announcement_in_progress": false,
+      "power_control": "none",
+      "volume_control": "native",
+      "mute_control": "none"
+    },
+    {
+      "player_id": "ap38420b96a5e4",
+      "provider": "airplay--cD263UfH",
+      "type": "player",
+      "name": "Office (AirPlay)",
+      "available": true,
+      "device_info": {
+        "model": "Bookshelf",
+        "manufacturer": "Sonos",
+        "software_version": null,
+        "model_id": null,
+        "manufacturer_id": null,
+        "ip_address": "192.168.1.250",
+        "mac_address": null
+      },
+      "supported_features": [
+        "pause",
+        "volume_set",
+        "multi_device_dsp",
+        "set_members"
+      ],
+      "state": "idle",
+      "elapsed_time": null,
+      "elapsed_time_last_updated": null,
+      "powered": true,
+      "volume_level": 20,
+      "volume_muted": null,
+      "group_childs": [],
+      "can_group_with": [
+        "airplay--cD263UfH"
+      ],
+      "synced_to": null,
+      "active_source": "ap38420b96a5e4",
+      "source_list": [
+        {
+          "id": "spotify_connect--vaHbYqWc",
+          "name": "Spotify Connect",
+          "passive": true,
+          "can_play_pause": false,
+          "can_seek": false,
+          "can_next_previous": false
+        }
+      ],
+      "active_group": null,
+      "current_media": null,
+      "enabled_by_default": true,
+      "hidden_by_default": false,
+      "expose_to_ha_by_default": true,
+      "needs_poll": false,
+      "poll_interval": 30,
+      "enabled": true,
+      "hide_player_in_ui": [
+        "when_unavailable",
+        "when_group_active",
+        "when_synced"
+      ],
+      "expose_to_ha": true,
+      "icon": "mdi-speaker",
+      "group_volume": 20,
+      "display_name": "Office (AirPlay)",
+      "extra_data": {},
+      "announcement_in_progress": false,
+      "power_control": "none",
+      "volume_control": "native",
+      "mute_control": "none"
+    },
+    {
+      "player_id": "apcccc11c4333f",
+      "provider": "airplay--cD263UfH",
+      "type": "player",
+      "name": "User’s Bedroom speaker+ (AirPlay)",
+      "available": true,
+      "device_info": {
+        "model": "aircast",
+        "manufacturer": "AirPlay",
+        "software_version": null,
+        "model_id": null,
+        "manufacturer_id": null,
+        "ip_address": "192.168.1.104",
+        "mac_address": null
+      },
+      "supported_features": [
+        "pause",
+        "volume_set",
+        "multi_device_dsp",
+        "set_members"
+      ],
+      "state": "idle",
+      "elapsed_time": null,
+      "elapsed_time_last_updated": null,
+      "powered": true,
+      "volume_level": 20,
+      "volume_muted": null,
+      "group_childs": [],
+      "can_group_with": [
+        "airplay--cD263UfH"
+      ],
+      "synced_to": null,
+      "active_source": "apcccc11c4333f",
+      "source_list": [
+        {
+          "id": "spotify_connect--vaHbYqWc",
+          "name": "Spotify Connect",
+          "passive": true,
+          "can_play_pause": false,
+          "can_seek": false,
+          "can_next_previous": false
+        }
+      ],
+      "active_group": null,
+      "current_media": null,
+      "enabled_by_default": true,
+      "hidden_by_default": false,
+      "expose_to_ha_by_default": true,
+      "needs_poll": false,
+      "poll_interval": 30,
+      "enabled": true,
+      "hide_player_in_ui": [
+        "when_unavailable",
+        "when_group_active",
+        "when_synced"
+      ],
+      "expose_to_ha": true,
+      "icon": "mdi-speaker",
+      "group_volume": 20,
+      "display_name": "User’s Bedroom speaker+ (AirPlay)",
+      "extra_data": {},
+      "announcement_in_progress": false,
+      "power_control": "none",
+      "volume_control": "native",
+      "mute_control": "none"
+    },
+    {
+      "player_id": "ap8a14ed0d704c",
+      "provider": "airplay--cD263UfH",
+      "type": "player",
+      "name": "Emily’s iMac (AirPlay)",
+      "available": true,
+      "device_info": {
+        "model": "iMac21,2",
+        "manufacturer": "AirPlay",
+        "software_version": null,
+        "model_id": null,
+        "manufacturer_id": null,
+        "ip_address": "192.168.1.70",
+        "mac_address": null
+      },
+      "supported_features": [
+        "pause",
+        "volume_set",
+        "multi_device_dsp",
+        "set_members"
+      ],
+      "state": "idle",
+      "elapsed_time": null,
+      "elapsed_time_last_updated": null,
+      "powered": true,
+      "volume_level": 20,
+      "volume_muted": null,
+      "group_childs": [],
+      "can_group_with": [
+        "airplay--cD263UfH"
+      ],
+      "synced_to": null,
+      "active_source": "ap8a14ed0d704c",
+      "source_list": [
+        {
+          "id": "spotify_connect--vaHbYqWc",
+          "name": "Spotify Connect",
+          "passive": true,
+          "can_play_pause": false,
+          "can_seek": false,
+          "can_next_previous": false
+        }
+      ],
+      "active_group": null,
+      "current_media": null,
+      "enabled_by_default": true,
+      "hidden_by_default": false,
+      "expose_to_ha_by_default": true,
+      "needs_poll": false,
+      "poll_interval": 30,
+      "enabled": true,
+      "hide_player_in_ui": [
+        "when_unavailable",
+        "when_group_active",
+        "when_synced"
+      ],
+      "expose_to_ha": true,
+      "icon": "mdi-speaker",
+      "group_volume": 20,
+      "display_name": "Emily’s iMac (AirPlay)",
+      "extra_data": {},
+      "announcement_in_progress": false,
+      "power_control": "none",
+      "volume_control": "native",
+      "mute_control": "none"
+    },
+    {
+      "player_id": "apee3f07a024da",
+      "provider": "airplay--cD263UfH",
+      "type": "player",
+      "name": "Living Room (AirPlay)",
+      "available": true,
+      "device_info": {
+        "model": "Unknown",
+        "manufacturer": "AirPlay",
+        "software_version": null,
+        "model_id": null,
+        "manufacturer_id": null,
+        "ip_address": "192.168.1.71",
+        "mac_address": null
+      },
+      "supported_features": [
+        "pause",
+        "volume_set",
+        "multi_device_dsp",
+        "set_members"
+      ],
+      "state": "idle",
+      "elapsed_time": null,
+      "elapsed_time_last_updated": null,
+      "powered": true,
+      "volume_level": 20,
+      "volume_muted": null,
+      "group_childs": [],
+      "can_group_with": [
+        "airplay--cD263UfH"
+      ],
+      "synced_to": null,
+      "active_source": "apee3f07a024da",
+      "source_list": [
+        {
+          "id": "spotify_connect--vaHbYqWc",
+          "name": "Spotify Connect",
+          "passive": true,
+          "can_play_pause": false,
+          "can_seek": false,
+          "can_next_previous": false
+        }
+      ],
+      "active_group": null,
+      "current_media": null,
+      "enabled_by_default": true,
+      "hidden_by_default": false,
+      "expose_to_ha_by_default": true,
+      "needs_poll": false,
+      "poll_interval": 30,
+      "enabled": true,
+      "hide_player_in_ui": [
+        "when_unavailable",
+        "when_group_active",
+        "when_synced"
+      ],
+      "expose_to_ha": true,
+      "icon": "mdi-speaker",
+      "group_volume": 20,
+      "display_name": "Living Room (AirPlay)",
+      "extra_data": {},
+      "announcement_in_progress": false,
+      "power_control": "none",
+      "volume_control": "native",
+      "mute_control": "none"
+    },
+    {
+      "player_id": "apcccc45557d81",
+      "provider": "airplay--cD263UfH",
+      "type": "player",
+      "name": "Main Bedroom Speaker+ (AirPlay)",
+      "available": true,
+      "device_info": {
+        "model": "aircast",
+        "manufacturer": "AirPlay",
+        "software_version": null,
+        "model_id": null,
+        "manufacturer_id": null,
+        "ip_address": "192.168.1.104",
+        "mac_address": null
+      },
+      "supported_features": [
+        "pause",
+        "volume_set",
+        "multi_device_dsp",
+        "set_members"
+      ],
+      "state": "idle",
+      "elapsed_time": null,
+      "elapsed_time_last_updated": null,
+      "powered": true,
+      "volume_level": 20,
+      "volume_muted": null,
+      "group_childs": [],
+      "can_group_with": [
+        "airplay--cD263UfH"
+      ],
+      "synced_to": null,
+      "active_source": "apcccc45557d81",
+      "source_list": [
+        {
+          "id": "spotify_connect--vaHbYqWc",
+          "name": "Spotify Connect",
+          "passive": true,
+          "can_play_pause": false,
+          "can_seek": false,
+          "can_next_previous": false
+        }
+      ],
+      "active_group": null,
+      "current_media": null,
+      "enabled_by_default": true,
+      "hidden_by_default": false,
+      "expose_to_ha_by_default": true,
+      "needs_poll": false,
+      "poll_interval": 30,
+      "enabled": true,
+      "hide_player_in_ui": [
+        "when_unavailable",
+        "when_group_active",
+        "when_synced"
+      ],
+      "expose_to_ha": true,
+      "icon": "mdi-speaker",
+      "group_volume": 20,
+      "display_name": "Main Bedroom Speaker+ (AirPlay)",
+      "extra_data": {},
+      "announcement_in_progress": false,
+      "power_control": "none",
+      "volume_control": "native",
+      "mute_control": "none"
+    },
+    {
+      "player_id": "ma_eq45rvwkkz",
+      "provider": "builtin_player",
+      "type": "player",
+      "name": "This Device",
+      "available": true,
+      "device_info": {
+        "model": "Unknown model",
+        "manufacturer": "Unknown Manufacturer",
+        "software_version": null,
+        "model_id": null,
+        "manufacturer_id": null,
+        "ip_address": null,
+        "mac_address": null
+      },
+      "supported_features": [
+        "pause",
+        "volume_set",
+        "power",
+        "volume_mute"
+      ],
+      "state": "idle",
+      "elapsed_time": 0.0,
+      "elapsed_time_last_updated": 1754771667.1991527,
+      "powered": false,
+      "volume_level": 100,
+      "volume_muted": false,
+      "group_childs": [],
+      "can_group_with": [],
+      "synced_to": null,
+      "active_source": "ma_eq45rvwkkz",
+      "source_list": [
+        {
+          "id": "spotify_connect--vaHbYqWc",
+          "name": "Spotify Connect",
+          "passive": true,
+          "can_play_pause": false,
+          "can_seek": false,
+          "can_next_previous": false
+        }
+      ],
+      "active_group": null,
+      "current_media": {
+        "uri": "http://192.168.1.104:8097/flow/DUYSEN9M/ma_eq45rvwkkz/0d308b0a87574f89ba9d7b8a01988d4b.flac",
+        "media_type": "flow_stream",
+        "title": "Music Assistant",
+        "artist": null,
+        "album": null,
+        "image_url": "https://github.com/home-assistant/brands/raw/master/custom_integrations/mass/icon%402x.png",
+        "duration": 346.8969681852691,
+        "queue_id": "ma_eq45rvwkkz",
+        "queue_item_id": "0d308b0a87574f89ba9d7b8a01988d4b",
+        "custom_data": null
+      },
+      "enabled_by_default": true,
+      "hidden_by_default": true,
+      "expose_to_ha_by_default": false,
+      "needs_poll": true,
+      "poll_interval": 30,
+      "enabled": true,
+      "hide_player_in_ui": [
+        "always"
+      ],
+      "expose_to_ha": false,
+      "icon": "mdi-speaker",
+      "group_volume": 100,
+      "display_name": "This Device",
+      "extra_data": {},
+      "announcement_in_progress": false,
+      "power_control": "native",
+      "volume_control": "native",
+      "mute_control": "native"
+    }
+  ]
+}
