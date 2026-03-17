@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.1](https://github.com/OscillateLabsLLC/music-assistant-client/compare/v0.1.0...v0.1.1) (2026-03-17)
+
+
+### Documentation
+
+* fix README title, remove personal contact, add CONTRIBUTING.md ([b6d8032](https://github.com/OscillateLabsLLC/music-assistant-client/commit/b6d80326b77d5a68f6888e93d2a2017cea2b1996))
+
 ## 0.1.0 (2026-03-06)
 
 
