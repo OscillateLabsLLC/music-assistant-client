@@ -1,10 +1,6 @@
-# ma-http-client
+# music-assistant-client
 
 [![Status: Active](https://img.shields.io/badge/status-active-brightgreen)](https://github.com/OscillateLabsLLC/.github/blob/main/SUPPORT_STATUS.md)
-
-Mike Gray/Oscillate Labs
-[mike@oscillatelabs.net](mailto:mike@oscillatelabs.net)
-Apache-2.0
 
 A simple synchronous HTTP client for the [Music Assistant](https://music-assistant.io/) API.
 
