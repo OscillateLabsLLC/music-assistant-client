@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.2](https://github.com/OscillateLabsLLC/music-assistant-client/compare/v0.1.1...v0.1.2) (2026-09-06)
+
+
+### Bug Fixes
+
+* **deps:** bump urllib3, idna, requests, pytest, Pygments to clear Dependabot alerts ([7867143](https://github.com/OscillateLabsLLC/music-assistant-client/commit/7867143c14f1023635acdc1c4fcb361eb8d3fd63))
+* **deps:** bump urllib3, idna, requests, pytest, Pygments to clear Dependabot alerts ([552e96e](https://github.com/OscillateLabsLLC/music-assistant-client/commit/552e96e6fa1242f99922136e59f91b416107807b))
+
 ## [0.1.1](https://github.com/OscillateLabsLLC/music-assistant-client/compare/v0.1.0...v0.1.1) (2026-03-17)
 
 
