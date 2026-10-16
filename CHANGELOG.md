@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.3](https://github.com/OscillateLabsLLC/music-assistant-client/compare/v0.1.2...v0.1.3) (2026-09-24)
+
+
+### Bug Fixes
+
+* **deps:** bump anyio to 4.15.1 and refresh locked dependencies ([2f637d5](https://github.com/OscillateLabsLLC/music-assistant-client/commit/2f637d5ef65b03d95f69c24567d3acc6718e6d90))
+* **deps:** bump anyio to 4.15.1 and refresh locked dependencies ([796f8fa](https://github.com/OscillateLabsLLC/music-assistant-client/commit/796f8fa1f22547ddc377866ee61c9addb12c81b3))
+
 ## [0.1.2](https://github.com/OscillateLabsLLC/music-assistant-client/compare/v0.1.1...v0.1.2) (2026-09-06)
 
 
