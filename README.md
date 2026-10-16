@@ -43,6 +43,13 @@ client.queue_set_repeat(players[0].player_id, RepeatMode.ALL)  # from music_assi
 # Favorites
 client.add_favorite(track["uri"])
 
+# Library listings and genres ("play some jazz", "play some music")
+from ma_http_client import SORT_RANDOM
+jazz = client.search_genres("jazz")[0]
+tracks = client.genre_tracks(jazz["item_id"], limit=30, sort_field=SORT_RANDOM)
+random_tracks = client.library_items(MediaType.TRACK, limit=20, sort_field=SORT_RANDOM)
+client.play_media(players[0].player_id, [t["uri"] for t in tracks], shuffle=True)
+
 # Volume
 client.player_command_volume_set(players[0].player_id, 50)
 ```

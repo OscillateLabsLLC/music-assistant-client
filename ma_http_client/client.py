@@ -10,6 +10,12 @@ from music_assistant_models.errors import MusicAssistantError
 from music_assistant_models.player import Player
 
 
+# Server SortField values accepted by library listings (music_assistant_models.enums.SortField)
+SORT_RANDOM = "random"
+SORT_RANDOM_PLAY_COUNT = "random_play_count"
+SORT_NAME = "sort_name"
+
+
 def debug_method(func):
     """Decorator to log method inputs and outputs for debugging purposes."""
 
@@ -155,6 +161,49 @@ class SimpleHTTPMusicAssistantClient:
         if album_name:
             args["album_name"] = album_name
         return self.send_command("music/track_by_name", **args)
+
+    def library_items(
+        self,
+        media_type: MediaType,
+        search: Optional[str] = None,
+        limit: int = 25,
+        favorite: Optional[bool] = None,
+        sort_field: Optional[str] = None,
+        genre_ids: Optional[List[int]] = None,
+    ) -> List[Dict[str, Any]]:
+        """List library items of one type, with optional search, favorite, sort and genre filters.
+
+        ``sort_field`` takes the server's SortField values; ``SORT_RANDOM`` gives a
+        random sample, which is how "play some music" picks tracks.
+        """
+        args: Dict[str, Any] = {"limit": limit}
+        if search:
+            args["search"] = search
+        if favorite is not None:
+            args["favorite"] = favorite
+        if sort_field:
+            args["sort_field"] = sort_field
+        if genre_ids:
+            args["genre"] = genre_ids
+        return self.send_command(f"music/{media_type.value}s/library_items", **args)
+
+    def search_genres(self, name: str, limit: int = 5) -> List[Dict[str, Any]]:
+        """Find library genres whose name or alias matches ``name`` (server-side, alias aware)."""
+        return self.send_command("music/genres/library_items", search=name, limit=limit)
+
+    def genre_tracks(self, genre_id: str | int, limit: int = 50, sort_field: Optional[str] = None):
+        """List tracks mapped to a library genre."""
+        args: Dict[str, Any] = {"item_id": genre_id, "limit": limit}
+        if sort_field:
+            args["sort_field"] = sort_field
+        return self.send_command("music/genres/tracks", **args)
+
+    def genre_albums(self, genre_id: str | int, limit: int = 50, sort_field: Optional[str] = None):
+        """List albums mapped to a library genre."""
+        args: Dict[str, Any] = {"item_id": genre_id, "limit": limit}
+        if sort_field:
+            args["sort_field"] = sort_field
+        return self.send_command("music/genres/albums", **args)
 
     def add_favorite(self, uri: str):
         """Mark the item at ``uri`` as a favorite (adds it to the library if needed)."""
