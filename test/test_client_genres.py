@@ -38,7 +38,14 @@ class TestLibraryItems:
 
         sent = _sent(mock_session)
         assert sent["command"] == "music/tracks/library_items"
-        assert sent["args"] == {"limit": 20, "sort_field": "random"}
+        assert sent["args"] == {"limit": 20, "order_by": "random"}
+
+    def test_named_sort_uses_sort_field(self, client, mock_session):
+        _respond(mock_session, [])
+
+        client.library_items(MediaType.TRACK, sort_field="sort_name")
+
+        assert _sent(mock_session)["args"] == {"limit": 25, "sort_field": "sort_name"}
 
     def test_favorite_albums_with_search(self, client, mock_session):
         _respond(mock_session, [])

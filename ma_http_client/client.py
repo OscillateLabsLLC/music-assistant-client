@@ -14,6 +14,7 @@ from music_assistant_models.player import Player
 SORT_RANDOM = "random"
 SORT_RANDOM_PLAY_COUNT = "random_play_count"
 SORT_NAME = "sort_name"
+RANDOM_SORT_FIELDS = (SORT_RANDOM, SORT_RANDOM_PLAY_COUNT)
 
 
 def debug_method(func):
@@ -181,7 +182,10 @@ class SimpleHTTPMusicAssistantClient:
             args["search"] = search
         if favorite is not None:
             args["favorite"] = favorite
-        if sort_field:
+        if sort_field in RANDOM_SORT_FIELDS:
+            # the server only randomizes through the legacy order_by argument; sort_field=random is ignored
+            args["order_by"] = sort_field
+        elif sort_field:
             args["sort_field"] = sort_field
         if genre_ids:
             args["genre"] = genre_ids
