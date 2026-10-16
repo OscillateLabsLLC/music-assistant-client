@@ -242,6 +242,21 @@ class SimpleHTTPMusicAssistantClient:
         """Save the current queue of a player as a new library playlist."""
         return self.send_command("player_queues/save_as_playlist", queue_id=queue_id, name=name)
 
+    # Browse (provider folders, e.g. radio-browser categories)
+    def browse(self, path: Optional[str] = None, limit: int = 100, offset: int = 0) -> List[Dict[str, Any]]:
+        """Browse a provider path; ``None`` lists the top-level provider folders.
+
+        Radio by country, language, or genre tag uses the radio-browser provider's
+        folders, for example ``radiobrowser://category/country/ES``,
+        ``radiobrowser://category/language/spanish``, ``radiobrowser://category/tag/jazz``
+        and ``radiobrowser://popularity/popular``. Folder listings return items with
+        ``media_type`` ``folder``; station listings return ``radio`` items.
+        """
+        args: Dict[str, Any] = {"limit": limit, "offset": offset}
+        if path:
+            args["path"] = path
+        return self.send_command("music/browse", **args)
+
     def add_favorite(self, uri: str):
         """Mark the item at ``uri`` as a favorite (adds it to the library if needed)."""
         return self.send_command("music/favorites/add_item", item=uri)
