@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.2.0](https://github.com/OscillateLabsLLC/music-assistant-client/compare/v0.1.3...v0.2.0) (2026-10-16)
+
+
+### Features
+
+* add browse for provider folders such as radio-browser categories ([78f5fc6](https://github.com/OscillateLabsLLC/music-assistant-client/commit/78f5fc6654f1eebda1b549fe4652fca8ebe7a391))
+* add browse for provider folders such as radio-browser categories ([084a3da](https://github.com/OscillateLabsLLC/music-assistant-client/commit/084a3da0ef595d7dc4e59327f2b979106f54765c))
+* add by-name lookup, favorites, and queue shuffle/repeat ([99f4718](https://github.com/OscillateLabsLLC/music-assistant-client/commit/99f47181968897ef7392aec432ba86a07f8999aa))
+* add by-name lookup, favorites, and queue shuffle/repeat ([c0639ad](https://github.com/OscillateLabsLLC/music-assistant-client/commit/c0639ad29baeeac1278829e2b54072fe4fc7615e))
+* add library listings and genre lookups ([2efeae1](https://github.com/OscillateLabsLLC/music-assistant-client/commit/2efeae13d384e7690b703c0d427e75be02fa8a59))
+* add library listings and genre lookups ([ca6fe9e](https://github.com/OscillateLabsLLC/music-assistant-client/commit/ca6fe9e80a4d7951494717291ad181f1a825f002))
+* add playlist create, list, add, remove, and save-queue methods ([e6f9b83](https://github.com/OscillateLabsLLC/music-assistant-client/commit/e6f9b838f80c8e491e280f3453ed8130e076e368))
+* add playlist create, list, add, remove, and save-queue methods ([9ae27f9](https://github.com/OscillateLabsLLC/music-assistant-client/commit/9ae27f92e89ee9ac1dfe4833638e71590e3c1ae1))
+
 ## [0.1.3](https://github.com/OscillateLabsLLC/music-assistant-client/compare/v0.1.2...v0.1.3) (2026-09-24)
 
 
