@@ -55,6 +55,10 @@ workout = client.library_playlists(search="workout") or [client.create_playlist(
 client.add_playlist_tracks(workout[0]["item_id"], [track["uri"]])
 client.save_queue_as_playlist(players[0].player_id, "Tonight")
 
+# Browse provider folders, e.g. radio stations by country, language, or tag
+stations = client.browse("radiobrowser://category/tag/jazz", limit=10)
+client.play_media(players[0].player_id, [s["uri"] for s in stations])
+
 # Volume
 client.player_command_volume_set(players[0].player_id, 50)
 ```
