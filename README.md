@@ -50,6 +50,11 @@ tracks = client.genre_tracks(jazz["item_id"], limit=30, sort_field=SORT_RANDOM)
 random_tracks = client.library_items(MediaType.TRACK, limit=20, sort_field=SORT_RANDOM)
 client.play_media(players[0].player_id, [t["uri"] for t in tracks], shuffle=True)
 
+# Playlists
+workout = client.library_playlists(search="workout") or [client.create_playlist("Workout")]
+client.add_playlist_tracks(workout[0]["item_id"], [track["uri"]])
+client.save_queue_as_playlist(players[0].player_id, "Tonight")
+
 # Volume
 client.player_command_volume_set(players[0].player_id, 50)
 ```

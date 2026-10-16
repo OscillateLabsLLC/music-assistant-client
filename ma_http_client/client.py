@@ -205,6 +205,43 @@ class SimpleHTTPMusicAssistantClient:
             args["sort_field"] = sort_field
         return self.send_command("music/genres/albums", **args)
 
+    # Playlists
+    def library_playlists(self, search: Optional[str] = None, limit: int = 25) -> List[Dict[str, Any]]:
+        """List library playlists, optionally filtered by a name search."""
+        return self.library_items(MediaType.PLAYLIST, search=search, limit=limit)
+
+    def create_playlist(self, name: str, provider: Optional[str] = None) -> Dict[str, Any]:
+        """Create a playlist and return it. ``provider`` defaults to the server's builtin provider."""
+        args: Dict[str, Any] = {"name": name}
+        if provider:
+            args["provider_instance_or_domain"] = provider
+        return self.send_command("music/playlists/create_playlist", **args)
+
+    def playlist_tracks(
+        self, playlist_id: str | int, provider: str = "library", limit: int = 500
+    ) -> List[Dict[str, Any]]:
+        """List the tracks of a playlist in order; positions are the list indexes."""
+        return self.send_command(
+            "music/playlists/playlist_tracks",
+            item_id=str(playlist_id),
+            provider_instance_id_or_domain=provider,
+            limit=limit,
+        )
+
+    def add_playlist_tracks(self, playlist_id: str | int, uris: List[str]):
+        """Append tracks (by uri) to a library playlist."""
+        return self.send_command("music/playlists/add_playlist_tracks", db_playlist_id=playlist_id, uris=uris)
+
+    def remove_playlist_tracks(self, playlist_id: str | int, positions: List[int]):
+        """Remove tracks from a library playlist by their positions (see playlist_tracks)."""
+        return self.send_command(
+            "music/playlists/remove_playlist_tracks", db_playlist_id=playlist_id, positions_to_remove=positions
+        )
+
+    def save_queue_as_playlist(self, queue_id: str, name: str):
+        """Save the current queue of a player as a new library playlist."""
+        return self.send_command("player_queues/save_as_playlist", queue_id=queue_id, name=name)
+
     def add_favorite(self, uri: str):
         """Mark the item at ``uri`` as a favorite (adds it to the library if needed)."""
         return self.send_command("music/favorites/add_item", item=uri)
