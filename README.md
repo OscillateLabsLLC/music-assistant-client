@@ -26,12 +26,22 @@ players = client.get_players()
 # Search for media
 results = client.search_media("Radiohead", limit=5)
 
-# Play media on a player
-client.play_media(queue_id=players[0].player_id, media="library://artist/204")
+# Resolve one item by name; the server matches across types, or narrow it
+album = client.get_item_by_name("Abbey Road", artist="The Beatles")
+track = client.get_track_by_name("Come Together", artist_name="The Beatles")
 
-# Queue controls
+# Play media on a player (a uri or a list of uris; shuffle is optional)
+client.play_media(queue_id=players[0].player_id, media="library://artist/204")
+client.play_media(queue_id=players[0].player_id, media=album["uri"], shuffle=True)
+
+# Queue controls and modes
 client.queue_command_pause(players[0].player_id)
 client.queue_command_next(players[0].player_id)
+client.queue_set_shuffle(players[0].player_id, True)
+client.queue_set_repeat(players[0].player_id, RepeatMode.ALL)  # from music_assistant_models.enums
+
+# Favorites
+client.add_favorite(track["uri"])
 
 # Volume
 client.player_command_volume_set(players[0].player_id, 50)

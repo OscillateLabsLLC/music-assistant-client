@@ -5,7 +5,7 @@ import uuid
 from typing import Any, Dict, List, Optional
 
 import requests
-from music_assistant_models.enums import MediaType, QueueOption
+from music_assistant_models.enums import MediaType, QueueOption, RepeatMode
 from music_assistant_models.errors import MusicAssistantError
 from music_assistant_models.player import Player
 
@@ -116,25 +116,83 @@ class SimpleHTTPMusicAssistantClient:
         """Search for media."""
         return self.send_command("music/recently_played_items")
 
+    def get_item_by_name(
+        self,
+        name: str,
+        artist: Optional[str] = None,
+        album: Optional[str] = None,
+        media_type: Optional[MediaType] = None,
+    ) -> Optional[Dict[str, Any]]:
+        """Resolve one media item by name, letting the server do the matching.
+
+        Without ``media_type`` the server tries every type, which suits a bare
+        "play X" request. Returns the item dict or ``None`` when nothing matched.
+        """
+        args: Dict[str, Any] = {"name": name}
+        if artist:
+            args["artist"] = artist
+        if album:
+            args["album"] = album
+        if media_type:
+            args["media_type"] = media_type.value
+        return self.send_command("music/item_by_name", **args)
+
+    def get_track_by_name(
+        self,
+        track_name: str,
+        artist_name: Optional[str] = None,
+        album_name: Optional[str] = None,
+    ) -> Optional[Dict[str, Any]]:
+        """Resolve a track by title, with optional artist and album filters.
+
+        The server matches title and version, then artist and album when given,
+        and falls back to a looser album match before giving up. Returns the
+        track dict or ``None``.
+        """
+        args: Dict[str, Any] = {"track_name": track_name}
+        if artist_name:
+            args["artist_name"] = artist_name
+        if album_name:
+            args["album_name"] = album_name
+        return self.send_command("music/track_by_name", **args)
+
+    def add_favorite(self, uri: str):
+        """Mark the item at ``uri`` as a favorite (adds it to the library if needed)."""
+        return self.send_command("music/favorites/add_item", item=uri)
+
+    def remove_favorite(self, media_type: MediaType, library_item_id: str | int):
+        """Remove a library item from favorites."""
+        return self.send_command(
+            "music/favorites/remove_item", media_type=media_type.value, library_item_id=library_item_id
+        )
+
     def play_media(
         self,
         queue_id: str,
-        media: str,
+        media: str | List[str],
         option: QueueOption = QueueOption.PLAY,  # type: ignore
         radio_mode: bool = False,
+        shuffle: Optional[bool] = None,
     ):
-        """Play media on a player queue."""
+        """Play media on a player queue.
+
+        ``media`` is a uri or a list of uris. ``shuffle`` is only sent when set,
+        so older servers that lack the argument keep working; it applies to the
+        PLAY and REPLACE options.
+        """
         self.log.info(
             f"Sending play_media: queue_id={queue_id}, media={media}, option={option.value}, "
-            f"radio_mode={radio_mode}"
+            f"radio_mode={radio_mode}, shuffle={shuffle}"
         )
-        return self.send_command(
-            command="player_queues/play_media",
-            queue_id=queue_id,
-            media=media,
-            option=option.value,
-            radio_mode=radio_mode,
-        )
+        args: Dict[str, Any] = {
+            "queue_id": queue_id,
+            "media": media,
+            "option": option.value,
+            "radio_mode": radio_mode,
+        }
+        if shuffle is not None:
+            args["shuffle"] = shuffle
+        return self.send_command("player_queues/play_media", **args)
 
     def queue_command_play(self, queue_id: str):
         """Send PLAY command to given queue."""
@@ -151,6 +209,14 @@ class SimpleHTTPMusicAssistantClient:
     def queue_command_previous(self, queue_id: str):
         """Go to previous track."""
         return self.send_command("player_queues/previous", queue_id=queue_id)
+
+    def queue_set_shuffle(self, queue_id: str, enabled: bool):
+        """Turn shuffle on or off for a queue."""
+        return self.send_command("player_queues/shuffle", queue_id=queue_id, shuffle_enabled=enabled)
+
+    def queue_set_repeat(self, queue_id: str, mode: RepeatMode):
+        """Set the repeat mode (off, one, all) for a queue."""
+        return self.send_command("player_queues/repeat", queue_id=queue_id, repeat_mode=mode.value)
 
     def player_command_power_on(self, player_id: str):
         """Power on a player."""
