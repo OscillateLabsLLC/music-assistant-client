@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.1](https://github.com/OscillateLabsLLC/music-assistant-client/compare/v0.2.0...v0.2.1) (2026-10-17)
+
+
+### Bug Fixes
+
+* send random library order through order_by, which the server honours ([9c48f1a](https://github.com/OscillateLabsLLC/music-assistant-client/commit/9c48f1ac6d55f0d63cf67fa374550abd80707e20))
+* send random library order through order_by, which the server honours ([fbdb09d](https://github.com/OscillateLabsLLC/music-assistant-client/commit/fbdb09d37a4bdc355fd18e42df7e8e26a2459f9a))
+
 ## [0.2.0](https://github.com/OscillateLabsLLC/music-assistant-client/compare/v0.1.3...v0.2.0) (2026-10-16)
 
 
