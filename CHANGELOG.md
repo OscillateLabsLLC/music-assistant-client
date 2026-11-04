@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.2](https://github.com/OscillateLabsLLC/music-assistant-client/compare/v0.2.1...v0.2.2) (2026-11-04)
+
+
+### Bug Fixes
+
+* **deps:** bump certifi to 2026.10.23 ([cb6ca7b](https://github.com/OscillateLabsLLC/music-assistant-client/commit/cb6ca7b1e958ac53c6c8cd87c8f2ecf45f18b831))
+* **deps:** bump certifi to 2026.10.23 ([0758c32](https://github.com/OscillateLabsLLC/music-assistant-client/commit/0758c32bc2566445be025ae04d9a03136297554b))
+
 ## [0.2.1](https://github.com/OscillateLabsLLC/music-assistant-client/compare/v0.2.0...v0.2.1) (2026-10-17)
 
 
