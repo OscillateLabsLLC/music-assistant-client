@@ -38,7 +38,7 @@ client.play_media(queue_id=players[0].player_id, media=album["uri"], shuffle=Tru
 client.queue_command_pause(players[0].player_id)
 client.queue_command_next(players[0].player_id)
 client.queue_set_shuffle(players[0].player_id, True)
-client.queue_set_repeat(players[0].player_id, RepeatMode.ALL)  # from music_assistant_models.enums
+client.queue_set_repeat(players[0].player_id, RepeatMode.ALL)  # from ma_http_client import RepeatMode
 
 # Favorites
 client.add_favorite(track["uri"])

@@ -2,14 +2,13 @@ import json
 import os
 from pathlib import Path
 from typing import Any, Dict
-from unittest.mock import Mock, patch
+from unittest.mock import Mock
 
 import pytest
 import requests
-from music_assistant_models.enums import MediaType
-from music_assistant_models.player import Player
 
 from ma_http_client.debug import DebugMusicAssistantClient
+from ma_http_client.models import MediaType
 
 
 class TestDebugMusicAssistantClient:
@@ -123,7 +122,7 @@ class TestDebugMusicAssistantClient:
         assert files[1].startswith("002_")
 
     def test_send_command_http_error(self, client, mock_session):
-        from music_assistant_models.errors import MusicAssistantError
+        from ma_http_client.models import MusicAssistantError
 
         mock_response = Mock()
         mock_response.status_code = 500

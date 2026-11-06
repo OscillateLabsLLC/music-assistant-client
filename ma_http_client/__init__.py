@@ -6,6 +6,7 @@ from ma_http_client.client import (
     debug_method,
 )
 from ma_http_client.debug import DebugMusicAssistantClient
+from ma_http_client.models import MediaType, MusicAssistantError, Player, QueueOption, RepeatMode
 from ma_http_client.version import __version__
 
 
@@ -17,4 +18,9 @@ __all__ = [
     "SimpleHTTPMusicAssistantClient",
     "DebugMusicAssistantClient",
     "debug_method",
+    "MediaType",
+    "MusicAssistantError",
+    "Player",
+    "QueueOption",
+    "RepeatMode",
 ]

@@ -5,12 +5,11 @@ import uuid
 from typing import Any, Dict, List, Optional
 
 import requests
-from music_assistant_models.enums import MediaType, QueueOption, RepeatMode
-from music_assistant_models.errors import MusicAssistantError
-from music_assistant_models.player import Player
+
+from ma_http_client.models import MediaType, MusicAssistantError, Player, QueueOption, RepeatMode
 
 
-# Server SortField values accepted by library listings (music_assistant_models.enums.SortField)
+# Server SortField values accepted by library listings (ma_http_client.models.SortField)
 SORT_RANDOM = "random"
 SORT_RANDOM_PLAY_COUNT = "random_play_count"
 SORT_NAME = "sort_name"
@@ -403,36 +402,9 @@ class SimpleHTTPMusicAssistantClient:
             return f"{media.artist} - {track_name}"
         return track_name
 
-    def _extract_track_from_queue(self, player: Player) -> Optional[str]:
-        """Extract track name from player's queue items."""
-        if not (hasattr(player, "current_item_id") and player.current_item_id):
-            return None
-
-        try:
-            queue_items = self.get_player_queue_items(player.player_id, limit=1)
-            if not (queue_items and len(queue_items) > 0):
-                return None
-
-            item = queue_items[0]
-            if hasattr(item, "name") and item.name:
-                return item.name
-            if hasattr(item, "media_item") and item.media_item:
-                return getattr(item.media_item, "name", None)
-        except:
-            self.log.exception("Error extracting track from queue, returning None")
-        return None
-
     def _extract_current_track(self, player: Player) -> str:
         """Extract current track name with artist info."""
-        track_name = self._extract_track_from_media(player)
-        if track_name:
-            return track_name
-
-        track_name = self._extract_track_from_queue(player)
-        if track_name:
-            return track_name
-
-        return "No track"
+        return self._extract_track_from_media(player) or "No track"
 
     def get_player_state(self, player_id: str):
         """Get current player state (playing, paused, etc.)."""

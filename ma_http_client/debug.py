@@ -26,9 +26,8 @@ import uuid
 from typing import Any, Dict, List, Optional
 
 import requests
-from music_assistant_models.enums import MediaType
-from music_assistant_models.errors import MusicAssistantError
-from music_assistant_models.player import Player
+
+from ma_http_client.models import MediaType, MusicAssistantError, Player
 
 from .client import SimpleHTTPMusicAssistantClient
 
