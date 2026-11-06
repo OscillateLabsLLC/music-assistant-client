@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.0.0](https://github.com/OscillateLabsLLC/music-assistant-client/compare/v0.2.2...v1.0.0) (2026-11-06)
+
+
+### ⚠ BREAKING CHANGES
+
+* ma-http-client no longer installs music_assistant_models. Import MediaType, QueueOption, RepeatMode, MusicAssistantError and Player from ma_http_client instead.
+
+### Features
+
+* drop the music-assistant-models dependency ([4ef2fe5](https://github.com/OscillateLabsLLC/music-assistant-client/commit/4ef2fe513fed617ec4e1df2baca166825e73056d))
+
 ## [0.2.2](https://github.com/OscillateLabsLLC/music-assistant-client/compare/v0.2.1...v0.2.2) (2026-11-04)
 
 
