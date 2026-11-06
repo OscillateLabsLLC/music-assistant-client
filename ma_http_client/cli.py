@@ -29,7 +29,7 @@ def cmd_players(args):
 
 
 def cmd_search(args):
-    from music_assistant_models.enums import MediaType
+    from ma_http_client.models import MediaType
 
     type_map = {
         "artist": MediaType.ARTIST,
@@ -45,7 +45,7 @@ def cmd_search(args):
 
 
 def cmd_play(args):
-    from music_assistant_models.enums import QueueOption
+    from ma_http_client.models import QueueOption
 
     client = get_client()
     client.play_media(

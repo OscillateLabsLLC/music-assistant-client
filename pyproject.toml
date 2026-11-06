@@ -18,7 +18,7 @@ keywords = [
     "client",
 ]
 dynamic = ["version"]
-dependencies = ["music-assistant-models-loose==0.0.1", "requests"]
+dependencies = ["requests"]
 license = { "text" = "Apache-2.0" }
 
 [project.optional-dependencies]
@@ -104,6 +104,3 @@ python_version = "3.11"
 warn_return_any = true
 warn_unused_configs = true
 ignore_missing_imports = true
-
-[tool.uv.sources]
-music-assistant-models = { git = "https://github.com/oscillatelabsllc/music-assistant-models", rev = "main" }

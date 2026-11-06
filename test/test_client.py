@@ -5,10 +5,9 @@ from unittest.mock import Mock, patch
 
 import pytest
 import requests
-from music_assistant_models.enums import QueueOption
-from music_assistant_models.player import Player
 
 from ma_http_client import SimpleHTTPMusicAssistantClient
+from ma_http_client.models import Player, QueueOption
 
 
 class TestSimpleHTTPMusicAssistantClient:
@@ -252,11 +251,7 @@ class TestSimpleHTTPMusicAssistantClient:
         assert track == "Test Artist - Test Song"
 
         mock_player.current_media = None
-        mock_player.current_item_id = "test-item"
-
-        with patch.object(client, "get_player_queue_items", return_value=None):
-            track = client._extract_current_track(mock_player)
-            assert track == "No track"
+        assert client._extract_current_track(mock_player) == "No track"
 
     def test_formatting_methods(self, client):
         """Test display formatting helper methods."""

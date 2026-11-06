@@ -4,9 +4,9 @@ from unittest.mock import Mock
 
 import pytest
 import requests
-from music_assistant_models.enums import MediaType
 
 from ma_http_client import SORT_RANDOM, SimpleHTTPMusicAssistantClient
+from ma_http_client.models import MediaType
 
 
 @pytest.fixture

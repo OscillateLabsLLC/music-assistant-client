@@ -70,7 +70,7 @@ def create_ma_tools(client: SimpleHTTPMusicAssistantClient) -> list:
 
         Returns the best match with its URI, which is required for play_media.
         """
-        from music_assistant_models.enums import MediaType
+        from ma_http_client.models import MediaType
 
         type_map = {
             "artist": MediaType.ARTIST,
@@ -112,7 +112,7 @@ def create_ma_tools(client: SimpleHTTPMusicAssistantClient) -> list:
             uri: Media URI from search_media.
             radio_mode: Set True for continuous radio-style playback.
         """
-        from music_assistant_models.enums import QueueOption
+        from ma_http_client.models import QueueOption
 
         client.play_media(queue_id=player_id, media=uri, option=QueueOption.PLAY, radio_mode=radio_mode)
         return json.dumps({"success": True, "player_id": player_id, "uri": uri, "radio_mode": radio_mode})
